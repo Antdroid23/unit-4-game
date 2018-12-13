@@ -1,0 +1,94 @@
+html, body {
+    max-height: 100%;
+}
+
+body {
+    background-image: url(../images/backgroundImage.jpg) !important; 
+
+}
+
+.jumbotron {
+    background-image: url(../images/backgroundImage.jpg) !important; 
+}
+
+.instructions {
+    color: white !important;
+    background: rgb(182, 206, 236) !important;
+}
+
+h1 {
+    font-weight: 400 !important;
+}
+
+h5 {
+    line-height: 35px !important;
+}
+
+#rdmNum {
+    font-weight: bold !important;
+    background: rgb(195,192,223);
+    color: white;
+}
+
+#rdmCard {
+    background: rgb(248, 245, 248);
+}
+
+#randomNumber {
+    font-weight: bold;
+    color: rgb(152, 149, 235);
+}
+
+#images {
+    background: rgb(248, 245, 248);
+}
+
+img {
+    margin-left:  80px !important;
+    margin-right: 80px !important;
+}
+
+#scoreCard {
+    background: rgb(248, 245, 248); 
+}
+
+#totScore {
+    font-weight: bold !important;
+    color: rgb(195,192,223);
+}
+
+#totalScore {
+    font-weight: bold !important;
+    color: rgb(152, 149, 235);
+}
+
+#winLossCard {
+    background: rgb(248, 245, 248); 
+}
+
+#wl {
+    font-weight: bold !important;
+    color: rgb(195,192,223);
+}
+
+#text {
+    font-weight: bold !important;
+    color: rgb(195,192,223);
+}
+
+span {
+    font-weight: bold !important;
+    color: rgb(152, 149, 235);
+}
+
+.emptySpace {
+    background-image: url(../images/backgroundImage.jpg) !important; 
+    height: 28% !important;
+}
+
+.footer {
+    padding: 2px;
+    text-align: center;
+    color: white;
+    background-color: rgb(182, 206, 236) !important; 
+}

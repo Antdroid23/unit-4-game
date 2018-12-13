@@ -25,11 +25,10 @@ randomNumber = Math.floor(Math.random() * 100) + 26;
 totalScore = 0;
 
 
+//.text() Method
 $("#randomNumber").text(randomNumber);
 $("#losses").text(losses);
 $("#wins").text(wins);
-$("#losses").html(losses);
-$("#wins").html(wins);
 $("#totalScore").text(totalScore);
 
  
@@ -59,42 +58,41 @@ function lost() {
 	reset();
 }
 
-function evaluate(){
+function execute(){
     if (totalScore === randomNumber){
-        win()
+        win();
     }
-    else (totalScore > randomNumber);{
-        lost()
+    else if (totalScore > randomNumber){
+        lost();
     }
-}
+} 
+
 
 
 $("#crysRed").click (function(){
-    console.log(totalScore);
     totalScore = totalScore + crysRed; 
-    console.log(totalScore);
     $("#totalScore").text(totalScore);
 
-    evaluate(); 
+    execute(); 
   });  
 
  $("#crysBlue").click (function(){
     totalScore = totalScore + crysBlue;
     $("#totalScore").text(totalScore);
 
-    evaluate();   
+    execute();   
   });  
 
  $("#crysYellow").click (function(){
     totalScore = totalScore + crysYellow;
     $("#totalScore").text(totalScore);  
 
-    evaluate();   
+    execute();   
   });  
 
  $("#crysGreen").click (function(){
     totalScore = totalScore + crysGreen;
     $("#totalScore").text(totalScore);
     
-    evaluate();   
+    execute();   
   });  
