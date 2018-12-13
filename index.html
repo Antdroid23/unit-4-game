@@ -13,20 +13,55 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="text-center display-4">Crystal Collector</h1>
-            <p class="lead"> <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dolorum necessitatibus rem. Ratione, reiciendis sequi.</h5></p>
+            <p class="lead"> <h5>You will be given a random number at the start of the game. There are four crystals below. 
+                By clicking on a crystal you will add a specific amount of point to your total score.You win the game by 
+                matching your total score to random number, you loose the game if your total score goes above the random number.
+                The value of each crystal is hidden from you until you click it. Each time when the game starts, the game will 
+                change the values of each crystal.</h5></p>
             <br>
             <br>
             <br>
             <div class="row">
-            <div class="col-md-12">
-                <p class="random" id = "randomNumber"> </p>
-            </div>
-            <div class="col-md-12">
-                <img src="assets/images/blue.jpg" class="img-fluid" alt="Blue Crystal image">
-                <img src="assets/images/green.jpg" class="img-fluid" alt="Green Crystal image">
-                <img src="assets/images/red.jpg" class="img-fluid" alt="Red Crystal image">
-                <img src="assets/images/yellow.jpg" class="img-fluid" alt="Yellow Crystal image"> 
-            </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            RANDOM NUMBER
+                        </div>
+                        <div class="card-body">
+                                <p class="card-text text-center" id="randomNumber"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            CRYSTALS
+                        </div>
+                        <div class="card-body text-center">
+                            <img src="assets/images/red.jpg" class="img-fluid rounded float-left ml-5" alt="Blue Crystal image" id="crysRed">
+                            <img src="assets/images/blue.jpg" class="img-fluid mr-5" alt="Green Crystal image" id="crysBlue">
+                            <img src="assets/images/yellow.jpg" class="img-fluid ml-5" alt="Red Crystal image" id="crysYellow">
+                            <img src="assets/images/green.jpg" class="img-fluid rounded float-right mr-5" alt="Yellow Crystal image" id="crysGreen"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Score</h5>
+                        <p class="card-text mb-4 pb-3" id ="totalScore"></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Wins/Losses</h5>
+                        <p class="card-text">Wins: <span id ="wins"></span></p>
+                        <p class="card-text">Losses: <span id ="losses"></span></p>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -44,11 +79,12 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript" src="assets/javascript/game.js"></script>    
-</body>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>  
+  </body>
 </html>
-
-    <!-- <p class="userWins" id = "wins">Wins: </p>
-<br>
-    <p class="userLosses" id = "losses">Losses: </p> -->
