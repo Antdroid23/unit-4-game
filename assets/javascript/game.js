@@ -17,11 +17,11 @@ var wins, losses, crysRed, crysBlue, crysYellow, crysGreen, randomNumber, totalS
 
 wins = 0;
 losses = 0;
-crysRed = Math.floor(Math.random() * 10) + 1;
-crysBlue = Math.floor(Math.random() * 10) + 1;
-crysYellow = Math.floor(Math.random() * 10) + 1;
-crysGreen = Math.floor(Math.random() * 10) + 1;
-randomNumber = Math.floor(Math.random() * 100) + 26; 
+crysRed = Math.floor(Math.random() * 12) + 1;
+crysBlue = Math.floor(Math.random() * 12) + 1;
+crysYellow = Math.floor(Math.random() * 12) + 1;
+crysGreen = Math.floor(Math.random() * 12) + 1;
+randomNumber = Math.floor(Math.random() * 102) + 19; 
 totalScore = 0;
 
 
@@ -96,3 +96,5 @@ $("#crysRed").click (function(){
     
     execute();   
   });  
+
+  
